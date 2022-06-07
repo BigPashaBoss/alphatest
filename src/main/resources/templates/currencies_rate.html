@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Exchange rate</title>
+</head>
+<body>
+<h3 th:text="'Exchange rate now : '  + ${lastExchange}"/>
+<h3 th:text="'Exchange rate yesterday : '  + ${previousExchange}"/>
+<h3 th:text="'The difference between courses per day is :'  + ${difference}"/>
+<img th:src="${imageUrl}">
+</body>
+</html>

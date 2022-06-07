@@ -1,0 +1,17 @@
+Для запуска приложения через докер необходимо:
+1. Запустить консоль в корне приложения
+1. Сбилдить приложение выполнив в консоле команду - gradlew bootJar
+2. Собрать контейнер - docker build -t alfatest:1.0-SNAPSHOT .
+3. Запустить созданный контейнер - docker run -d -p 8080:8080 alfatest:1.0-SNAPSHOT
+
+Доступные HTTP endpoint: http://localhost:8080/currencies/{currencies}
+Где, {currencies} значение из списка ниже указанные через разделяющий символ |
+AED|AFN|ALL|AMD|ANG|AOA|ARS|AUD|AWG|AZN|BAM|BBD|BDT|BGN|BHD|BIF|BMD|BND|BOB|BRL|
+BSD|BTC|BTN|BWP|BYN|BZD|CAD|CDF|CHF|CLF|CLP|CNH|CNY|COP|CRC|CUC|CUP|CVE|CZK|DJF|
+DKK|DOP|DZD|EGP|ERN|ETB|EUR|FJD|FKP|GBP|GEL|GGP|GHS|GIP|GMD|GNF|GTQ|GYD|HKD|HNL|
+HRK|HTG|HUF|IDR|ILS|IMP|INR|IQD|IRR|ISK|JEP|JMD|JOD|JPY|KES|KGS|KHR|KMF|KPW|KRW|
+KWD|KYD|KZT|LAK|LBP|LKR|LRD|LSL|LYD|MAD|MDL|MGA|MKD|MMK|MNT|MOP|MRU|MUR|MVR|MWK|
+MXN|MYR|MZN|NAD|NGN|NIO|NOK|NPR|NZD|OMR|PAB|PEN|PGK|PHP|PKR|PLN|PYG|QAR|RON|RSD|
+RUB|RWF|SAR|SBD|SCR|SDG|SEK|SGD|SHP|SLL|SOS|SRD|SSP|STD|STN|SVC|SYP|SZL|THB|TJS|
+TMT|TND|TOP|TRY|TTD|TWD|TZS|UAH|UGX|USD|UYU|UZS|VES|VND|VUV|WST|XAF|XAG|XAU|XCD|
+XDR|XOF|XPD|XPF|XPT|YER|ZAR|ZMW|ZWL
